@@ -30,7 +30,7 @@ To fix the problem with the jars, use the [Maven Shade plugin](http://maven.apac
 		</filters>
 		<transformers>
 			<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-				<mainClass>ie.bikelook.testclient.DeviceTest</mainClass>
+				<mainClass>ie.brianhenry.testclient.DeviceTest</mainClass>
 			</transformer>
 		</transformers>
 	</configuration>
@@ -160,3 +160,5 @@ I'll hopefully put up a full sample pom and project soon.
 Remote debugging would be nice.
 
 I haven't looked into MRAA yet. Maybe things will just work, or maybe it's just a matter of editing the SSH java command to explicitly state where the libraries are sitting on the Edison. In terms of keeping them synced between the Edison and dev environment, Maven Shade might add it to the fat jar.
+
+I don't have quite a thorough understanding of Maven so I'm open to being educated on more appropriate lifecycles and plugins.
