@@ -151,6 +151,8 @@ then the plugin itself
 </plugin>
 ```
 
+```mvn install``` will now install and run the application!
+
 ## Status/Caveats
 
 Currently, this leaves the ```mvn``` process running once the SSH session is opened, without any remote output displayed, until Crtl-C is hit, after which point the application continues to run on the Edison.
